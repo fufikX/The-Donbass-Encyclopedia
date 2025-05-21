@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детская энциклопедия природы Донецкого края</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип">
+                <div class="logo-text">
+                    <h1>Энциклопедия природы</h1>
+                    <p>Донецкого края</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="flora.html">Флора</a></li>
+                    <li><a href="fauna.html">Фауна</a></li>
+                    <li><a href="quiz.html">Викторина</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер с видео фоном -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="video/nature.mp4" type="video/mp4">
+            <!-- Запасное изображение, если видео не загрузится -->
+            <img src="images/backgrounds/nature-background.jpg" alt="Природа Донецкого края">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Открой природу родного края</h2>
+            <p>Исследуй удивительный мир флоры и фауны Донецкого края, узнай интересные факты о родной природе и проверь свои знания в интерактивной викторине</p>
+            <div class="hero-buttons">
+                <a href="#categories" class="btn">Начать изучение</a>
+                <a href="quiz.html" class="btn btn-secondary">Пройти викторину</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция с категориями -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Разделы энциклопедии</h2>
+            </div>
+            <div class="category-grid">
+                <!-- Карточка категории: Флора -->
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('images/backgrounds/flora-bg.jpg');"></div>
+                    <div class="category-content">
+                        <h3>Флора Донецкого края</h3>
+                        <p>Узнай о разнообразии растительного мира: деревьях, кустарниках, травах и цветах, которые можно встретить в нашем регионе.</p>
+                        <a href="flora.html" class="read-more">Изучить растения</a>
+                    </div>
+                </div>
+                
+                <!-- Карточка категории: Фауна -->
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('images/backgrounds/fauna-bg.jpg');"></div>
+                    <div class="category-content">
+                        <h3>Фауна Донецкого края</h3>
+                        <p>Познакомься с животными, птицами, насекомыми и другими представителями животного мира нашего региона.</p>
+                        <a href="fauna.html" class="read-more">Изучить животных</a>
+                    </div>
+                </div>
+                
+                <!-- Карточка категории: Викторина -->
+                <div class="category-card">
+                    <div class="category-img" style="background-image: url('images/backgrounds/quiz-bg.jpg');"></div>
+                    <div class="category-content">
+                        <h3>Интерактивная викторина</h3>
+                        <p>Проверь свои знания о природе Донецкого края в увлекательной викторине с вопросами разной сложности.</p>
+                        <a href="quiz.html" class="read-more">Пройти викторину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "Знаете ли вы?" -->
+    <section class="fun-facts">
+        <div class="container">
+            <div class="section-title">
+                <h2>Знаете ли вы?</h2>
+            </div>
+            <div class="fact-container">
+                <div class="fact-decoration"></div>
+                <div class="fact-content">
+                    <h3>Интересные факты о природе Донецкого края</h3>
+                    <ul class="fact-list">
+                        <li class="fact-item">В Донецком крае находится более 50 видов растений, занесённых в Красную книгу.</li>
+                        <li class="fact-item">Степи Донецкого кряжа — одни из самых древних экосистем Европы, их возраст превышает 10 000 лет.</li>
+                        <li class="fact-item">На территории края обитает байбак (степной сурок) — зверёк, который является символом донецких степей.</li>
+                        <li class="fact-item">В заповеднике "Хомутовская степь" можно встретить более 500 видов растений на площади всего в 1 квадратный километр.</li>
+                        <li class="fact-item">Река Северский Донец — самая крупная река Донецкого края и главный источник пресной воды в регионе.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Призыв к изучению -->
+    <section class="cta">
+        <div class="container">
+            <h2>Изучай, познавай, береги!</h2>
+            <p>Природа Донецкого края уникальна и разнообразна. Чем больше мы знаем о ней, тем лучше сможем сохранить её богатства для будущих поколений.</p>
+            <a href="quiz.html" class="btn">Проверить свои знания</a>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>О проекте</h3>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="mission.html">Наша миссия</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="flora.html">Флора</a></li>
+                        <li><a href="fauna.html">Фауна</a></li>
+                        <li><a href="water.html">Водоёмы</a></li>
+                        <li><a href="redbook.html">Красная книга</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Интерактив</h3>
+                    <ul>
+                        <li><a href="quiz.html">Викторина</a></li>
+                        <li><a href="map.html">Интерактивная карта</a></li>
+                        <li><a href="gallery.html">Фотогалерея</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="https://ecoportal.info/" target="_blank">Экологический портал</a></li>
+                        <li><a href="https://wwf.ru/" target="_blank">WWF России</a></li>
+                        <li><a href="bibliography.html">Библиография</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Детская энциклопедия природы Донецкого края. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Детская энциклопедия природы Донецкого края</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <!-- Подключаем Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип">
+                <div class="logo-text">
+                    <h1>Энциклопедия природы</h1>
+                    <p>Донецкого края</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="flora.html">Флора</a></li>
+                    <li><a href="fauna.html">Фауна</a></li>
+                    
+                    <li><a href="quiz.html">Викторина</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Заголовок страницы -->
+    <section class="page-header contacts-header">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Информация о создателях проекта и как с нами связаться</p>
+        </div>
+    </section>
+
+    <!-- О проекте -->
+    <section class="about-project">
+        <div class="container">
+            <div class="section-title">
+                <h2>О нашем проекте</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/backgrounds/nature-background.jpg" alt="Природа Донецкого края">
+                </div>
+                <div class="about-text">
+                    <p>Детская энциклопедия природы Донецкого края — это образовательный проект, призванный познакомить детей и взрослых с уникальным природным наследием нашего региона.</p>
+                    <p>Наша цель — пробудить интерес к изучению и сохранению местной флоры и фауны, воспитать экологическое мышление и любовь к родной природе.</p>
+                    <p>Проект создан с любовью к природе и заботой о будущих поколениях. Мы стремимся сделать знакомство с природой Донецкого края интересным, увлекательным и доступным для всех.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Создатели проекта -->
+    <section class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Создатели проекта</h2>
+            </div>
+            <div class="team-members">
+                <!-- Первый создатель -->
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/arseni.jpg" alt="Чепушканов Арсений Владимирович">
+                    </div>
+                    <div class="member-info">
+                        <h3>Чепушканов Арсений Владимирович</h3>
+                        <p class="member-role">Основатель проекта</p>
+                        <div class="member-contacts">
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+7 (949) 468-24-46</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:chepushkanov99@mail.ru">chepushkanov99@mail.ru</a>
+                            </div>
+                        </div>
+                        <div class="member-bio">
+                            <p>Отвечает за техническую реализацию проекта. Разрабатывает веб-платформу, создаёт интерактивные элементы и обеспечивает работу всех функций энциклопедии.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Второй создатель -->
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/vova.jpg" alt="Иванов Владимир Александрович">
+                    </div>
+                    <div class="member-info">
+                        <h3>Иванов Владимир Александрович</h3>
+                        <p class="member-role">Технический руководитель</p>
+                        <div class="member-contacts">
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+7 (949) 426-34-85</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:ssmallrolton2008@gmail.com">ssmallrolton2008@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-telegram"></i>
+                                <a href="https://t.me/SlavaSitisu" target="_blank">@SlavaSitisu</a>
+                            </div>
+                        </div>
+                        <div class="member-bio">
+                            <p>Идейный вдохновитель и руководитель проекта. Отвечает за общую концепцию и содержание энциклопедии. Занимается сбором и систематизацией материалов о природе Донецкого края.p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма обратной связи -->
+    <section class="contact-form">
+        <div class="container">
+            <div class="section-title">
+                <h2>Связаться с нами</h2>
+            </div>
+            <div class="form-container">
+                <form id="feedback-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Тема сообщения</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Ваше сообщение</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить сообщение</button>
+                </form>
+                <div class="form-decorator">
+                    <div class="decorator-leaf"></div>
+                    <div class="decorator-flower"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>О проекте</h3>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="mission.html">Наша миссия</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Разделы</h3>
+                    <ul>
+                        <li><a href="flora.html">Флора</a></li>
+                        <li><a href="fauna.html">Фауна</a></li>
+                        <li><a href="water.html">Водоёмы</a></li>
+                        <li><a href="redbook.html">Красная книга</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Интерактив</h3>
+                    <ul>
+                        <li><a href="quiz.html">Викторина</a></li>
+                        <li><a href="map.html">Интерактивная карта</a></li>
+                        <li><a href="gallery.html">Фотогалерея</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Полезные ссылки</h3>
+                    <ul>
+                        <li><a href="https://ecoportal.info/" target="_blank">Экологический портал</a></li>
+                        <li><a href="https://wwf.ru/" target="_blank">WWF России</a></li>
+                        <li><a href="bibliography.html">Библиография</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Детская энциклопедия природы Донецкого края. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+</html>
