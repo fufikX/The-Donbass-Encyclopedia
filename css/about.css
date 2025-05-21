@@ -1,0 +1,382 @@
+/* Стили для страницы О нас */
+
+/* Заголовок страницы */
+.about-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/backgrounds/about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.page-header {
+    position: relative;
+}
+
+.page-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 3px;
+    background-color: #4CAF50;
+}
+
+.page-header h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.page-header p {
+    font-size: 18px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* О проекте */
+.about-project {
+    padding: 60px 0;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    height: 350px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Команда проекта */
+.team {
+    padding: 60px 0;
+    background-color: #f0f7e6;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.team-member {
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.member-photo {
+    flex: 0 0 300px;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    flex: 1;
+    padding: 30px;
+}
+
+.member-info h3 {
+    font-size: 24px;
+    color: #2b7b2b;
+    margin-bottom: 8px;
+}
+
+.member-role {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.member-contacts {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.contact-item i {
+    width: 24px;
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.contact-item a {
+    color: #2b7b2b;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    color: #4CAF50;
+}
+
+.member-bio p {
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Road Map */
+.roadmap {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.roadmap-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.roadmap-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.roadmap-path {
+    position: relative;
+}
+
+.roadmap-path::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #4CAF50;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin-left: -3px;
+    border-radius: 10px;
+}
+
+.roadmap-item {
+    padding: 20px 40px 20px 70px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.roadmap-point {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 0 6px rgba(76, 175, 80, 0.2);
+    z-index: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.roadmap-item:hover .roadmap-point {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.roadmap-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 5px solid #4CAF50;
+}
+
+.roadmap-item:hover .roadmap-content {
+    transform: translateX(5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.roadmap-content h3 {
+    color: #2b7b2b;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.roadmap-content p {
+    line-height: 1.7;
+    color: #555;
+    margin: 0;
+}
+
+/* Анимация для Road Map */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.roadmap-item {
+    opacity: 0;
+    animation: fadeInLeft 0.8s forwards;
+}
+
+.roadmap-item:nth-child(1) { animation-delay: 0.1s; }
+.roadmap-item:nth-child(2) { animation-delay: 0.2s; }
+.roadmap-item:nth-child(3) { animation-delay: 0.3s; }
+.roadmap-item:nth-child(4) { animation-delay: 0.4s; }
+.roadmap-item:nth-child(5) { animation-delay: 0.5s; }
+.roadmap-item:nth-child(6) { animation-delay: 0.6s; }
+.roadmap-item:nth-child(7) { animation-delay: 0.7s; }
+.roadmap-item:nth-child(8) { animation-delay: 0.8s; }
+.roadmap-item:nth-child(9) { animation-delay: 0.9s; }
+.roadmap-item:nth-child(10) { animation-delay: 1s; }
+
+/* Секция коллаборации */
+.collaboration {
+    padding: 60px 0;
+    background-color: #e8f5e9;
+}
+
+.collaboration-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.collaboration-content h2 {
+    font-size: 32px;
+    color: #2b7b2b;
+    margin-bottom: 20px;
+}
+
+.collaboration-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image, .about-text {
+        width: 100%;
+    }
+    
+    .about-image {
+        margin-bottom: 30px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        flex-direction: column;
+    }
+    
+    .member-photo {
+        flex: none;
+        height: 250px;
+    }
+    
+    .roadmap-item {
+        padding-left: 60px;
+    }
+    
+    .roadmap-content {
+        padding: 15px;
+    }
+    
+    .about-header {
+        height: 200px;
+    }
+    
+    .page-header h2 {
+        font-size: 32px;
+    }
+    
+    .collaboration-content h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .roadmap-point {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .roadmap-path::before {
+        left: 15px;
+    }
+    
+    .roadmap-item {
+        padding-left: 45px;
+    }
+    
+    .roadmap-content h3 {
+        font-size: 18px;
+    }
+}
